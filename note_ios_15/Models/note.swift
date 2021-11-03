@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import UIKit
+import SwiftUI
+
 
 
 struct Note: Identifiable {
     let id: UUID = UUID()
+    var title: String
     var image: String
     var people: [User] = []
+    var color: Color = .red
 }
 
 
@@ -31,32 +36,46 @@ let users: [User] = [
 let notes: Array<Note> = [
 
     Note(
+        title: "Home",
         image: "1",
-        people: [ users[5], users[0] ]
+        people: [ users[5], users[0] ],
+        color: .gray
     ),
     Note(
+        title: "Work",
         image: "2",
-        people: [ users[4], users[1], users[3] ]
+        people: [ users[4], users[1], users[3] ],
+        color: .orange
     ),
     Note(
+        title: "Home",
         image: "3",
-        people: [ users[1], users[0], users[3] ]
+        people: [ users[1], users[0], users[3] ],
+        color: .red
     ),
     Note(
+        title: "Work",
         image: "4",
-        people: [ users[3], users[1] ]
+        people: [ users[3], users[1] ],
+        color: .gray
     ),
     Note(
+        title: "Home",
         image: "5",
-        people: [ users[4], users[2] ]
+        people: [ users[4], users[2] ],
+        color: .brown
     ),
     Note(
-        image: "6",
-        people: [ users[3] ]
+        title: "Work",
+        image: "1",
+        people: [ users[3] ],
+        color: .gray
     ),
     Note(
-        image: "7",
-        people: [ users[0], users[3] ]
+        title: "Work",
+        image: "5",
+        people: [ users[0], users[3] ],
+        color: .gray
     ),
 
 ]
