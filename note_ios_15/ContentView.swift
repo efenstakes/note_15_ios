@@ -63,7 +63,7 @@ struct NoteCardView: View {
                             .clipShape(Circle())
                         Text(note.people[0].name)
                             .font(.body)
-                            .fontWeight(.regular)
+                            .fontWeight(.semibold)
                     }
                 }
                 
