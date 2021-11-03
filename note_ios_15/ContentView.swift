@@ -71,6 +71,7 @@ struct NoteCardView: View {
                 
                 Text("Add new")
                     .font(.caption)
+                    .bold()
                     .padding()
                     .background(
                         Color.black.opacity(0.9)
