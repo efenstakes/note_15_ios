@@ -45,7 +45,7 @@ struct NoteCardView: View {
             // image
             Image(note.image)
                 .resizable()
-                .frame(height: 260, alignment: .topLeading)
+                .frame(height: 230, alignment: .topLeading)
             
             
             // details
@@ -87,7 +87,7 @@ struct NoteCardView: View {
             
         }
         .clipped()
-        .frame(height: 360, alignment: .center)
+        .frame(height: 330, alignment: .center)
         .frame(maxWidth: .infinity)
         .cornerRadius(20)
         .padding()
