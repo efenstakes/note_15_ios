@@ -43,6 +43,11 @@ let notes: Array<Note> = [
     ),
     Note(
         title: "Work",
+        image: "4",
+        people: [ users[3], users[1] ],
+        color: .gray
+    ),    Note(
+        title: "Work",
         image: "2",
         people: [ users[4], users[1], users[3] ],
         color: .orange
@@ -52,12 +57,6 @@ let notes: Array<Note> = [
         image: "3",
         people: [ users[1], users[0], users[3] ],
         color: .red
-    ),
-    Note(
-        title: "Work",
-        image: "4",
-        people: [ users[3], users[1] ],
-        color: .gray
     ),
     Note(
         title: "Home",
